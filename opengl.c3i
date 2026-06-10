@@ -1,7 +1,8 @@
 module opengl::internal @local;
+
 const GL_MAX_VERSION = 45;
-macro int gl_version() @public
-{
+
+macro int gl_version() @public {
     $if $defined(GL_VERSION):
         return opengl::GL_VERSION;
     $else
@@ -12,14 +13,14 @@ macro int gl_version() @public
 module opengl::gl;
 
 /* Global type definitions */
-typedef GLenum = uint;
-typedef GLbitfield = uint;
-typedef GLclampx = int;
-typedef GLclampf = float;
-typedef GLclampd = double;
-typedef GLsync = uptr;
-typedef GLeglClientBufferEXT = void*;
-typedef GLeglImageOES = void*;
+typedef GLenum @constinit = uint;
+typedef GLbitfield @constinit = uint;
+typedef GLclampx @constinit = int;
+typedef GLclampf @constinit = float;
+typedef GLclampd @constinit = double;
+typedef GLsync @constinit = uptr;
+typedef GLeglClientBufferEXT @constinit = void*;
+typedef GLeglImageOES @constinit = void*;
 
 alias GLbyte = ichar;
 alias GLubyte = char;
@@ -41,8 +42,8 @@ alias GLsizeiptr = sz;
 alias GLsizeiptrARB = sz;
 alias GLint64 = long;
 alias GLint64EXT = long;
-alias GLuint64 = long;
-alias GLuint64EXT = long;
+alias GLuint64 = ulong;
+alias GLuint64EXT = ulong;
 alias GLsizei = int;
 alias GLhalfNV = ushort;
 alias GLvdpauSurfaceNV = GLintptr;
@@ -51,27 +52,21 @@ alias GLhandleARB = void*;
 alias Ext_cl_context = void*;
 alias Ext_cl_event = void*;
 
-alias Ext_GLDEBUGPROC = fn void(GLenum source,GLenum type,CUInt id,GLenum severity,usz length,ZString message, void *userParam);
-alias Ext_GLDEBUGPROCARB = fn void(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,GLchar *message,void *userParam);
-alias Ext_GLDEBUGPROCKHR = fn void(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,GLchar *message,void *userParam);
-alias Ext_GLDEBUGPROCAMD = fn void(GLuint id,GLenum category,GLenum severity,GLsizei length,GLchar *message,void *userParam);
+alias Ext_GLDEBUGPROC = fn void(GLenum source, GLenum type, CUInt id, GLenum severity, usz length, ZString message, void *userParam);
+alias Ext_GLDEBUGPROCARB = fn void(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, GLchar *message, void *userParam);
+alias Ext_GLDEBUGPROCKHR = fn void(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, GLchar *message, void *userParam);
+alias Ext_GLDEBUGPROCAMD = fn void(GLuint id, GLenum category, GLenum severity, GLsizei length, GLchar *message, void *userParam);
 alias Ext_GLVULKANPROCNV = fn void();
 
-
-/* Internal loading */
 alias GLLoadFn = fn void*(char*);
 
 module opengl;
+
 import opengl::internal, opengl::gl;
 
-macro loadGL(GLLoadFn load) @deprecated("Use opengl::init")
-{
-	return gl::load_gl_internal(load);
-}
-
 faultdef GL_INIT_FAILED;
-macro int? init(GLLoadFn load)
-{
+
+macro int? init(GLLoadFn load) {
 	int version = gl::load_gl_internal(load);
 	if (version == 0) return GL_INIT_FAILED~;
 	return version;
