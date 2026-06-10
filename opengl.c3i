@@ -62,7 +62,8 @@ alias GLLoadFn = fn void*(char*);
 
 module opengl;
 
-import opengl::internal, opengl::gl;
+import opengl::internal;
+import opengl::gl;
 
 faultdef GL_INIT_FAILED;
 

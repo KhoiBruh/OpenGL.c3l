@@ -12585,7 +12585,7 @@ PFNglFramebufferParameteriMESAPROC framebufferParameteriMESA = null;
 alias PFNglGetFramebufferParameterivMESAPROC = fn void(GLenum target, GLenum pname, GLint* params);
 PFNglGetFramebufferParameterivMESAPROC getFramebufferParameterivMESA = null;
 
-fn void load_gl_GL_VERSION_1_0(GLLoadFn load) {
+fn void load_GL_VERSION_1_0(GLLoadFn load) {
 	cullFace = load("glCullFace");
 	frontFace = load("glFrontFace");
 	hint = load("glHint");
@@ -12894,7 +12894,7 @@ fn void load_gl_GL_VERSION_1_0(GLLoadFn load) {
 	translatef = load("glTranslatef");
 }
 
-fn void load_gl_GL_VERSION_1_1(GLLoadFn load) {
+fn void load_GL_VERSION_1_1(GLLoadFn load) {
 	drawArrays = load("glDrawArrays");
 	drawElements = load("glDrawElements");
 	getPointerv = load("glGetPointerv");
@@ -12927,14 +12927,14 @@ fn void load_gl_GL_VERSION_1_1(GLLoadFn load) {
 	pushClientAttrib = load("glPushClientAttrib");
 }
 
-fn void load_gl_GL_VERSION_1_2(GLLoadFn load) {
+fn void load_GL_VERSION_1_2(GLLoadFn load) {
 	drawRangeElements = load("glDrawRangeElements");
 	texImage3D = load("glTexImage3D");
 	texSubImage3D = load("glTexSubImage3D");
 	copyTexSubImage3D = load("glCopyTexSubImage3D");
 }
 
-fn void load_gl_GL_VERSION_1_3(GLLoadFn load) {
+fn void load_GL_VERSION_1_3(GLLoadFn load) {
 	activeTexture = load("glActiveTexture");
 	sampleCoverage = load("glSampleCoverage");
 	compressedTexImage3D = load("glCompressedTexImage3D");
@@ -12983,7 +12983,7 @@ fn void load_gl_GL_VERSION_1_3(GLLoadFn load) {
 	multTransposeMatrixd = load("glMultTransposeMatrixd");
 }
 
-fn void load_gl_GL_VERSION_1_4(GLLoadFn load) {
+fn void load_GL_VERSION_1_4(GLLoadFn load) {
 	blendFuncSeparate = load("glBlendFuncSeparate");
 	multiDrawArrays = load("glMultiDrawArrays");
 	multiDrawElements = load("glMultiDrawElements");
@@ -13033,7 +13033,7 @@ fn void load_gl_GL_VERSION_1_4(GLLoadFn load) {
 	blendEquation = load("glBlendEquation");
 }
 
-fn void load_gl_GL_VERSION_1_5(GLLoadFn load) {
+fn void load_GL_VERSION_1_5(GLLoadFn load) {
 	genQueries = load("glGenQueries");
 	deleteQueries = load("glDeleteQueries");
 	isQuery = load("glIsQuery");
@@ -13055,7 +13055,7 @@ fn void load_gl_GL_VERSION_1_5(GLLoadFn load) {
 	getBufferPointerv = load("glGetBufferPointerv");
 }
 
-fn void load_gl_GL_VERSION_2_0(GLLoadFn load) {
+fn void load_GL_VERSION_2_0(GLLoadFn load) {
 	blendEquationSeparate = load("glBlendEquationSeparate");
 	drawBuffers = load("glDrawBuffers");
 	stencilOpSeparate = load("glStencilOpSeparate");
@@ -13151,7 +13151,7 @@ fn void load_gl_GL_VERSION_2_0(GLLoadFn load) {
 	vertexAttribPointer = load("glVertexAttribPointer");
 }
 
-fn void load_gl_GL_VERSION_2_1(GLLoadFn load) {
+fn void load_GL_VERSION_2_1(GLLoadFn load) {
 	uniformMatrix2x3fv = load("glUniformMatrix2x3fv");
 	uniformMatrix3x2fv = load("glUniformMatrix3x2fv");
 	uniformMatrix2x4fv = load("glUniformMatrix2x4fv");
@@ -13160,7 +13160,7 @@ fn void load_gl_GL_VERSION_2_1(GLLoadFn load) {
 	uniformMatrix4x3fv = load("glUniformMatrix4x3fv");
 }
 
-fn void load_gl_GL_VERSION_3_0(GLLoadFn load) {
+fn void load_GL_VERSION_3_0(GLLoadFn load) {
 	colorMaski = load("glColorMaski");
 	getBooleani_v = load("glGetBooleani_v");
 	getIntegeri_v = load("glGetIntegeri_v");
@@ -13247,7 +13247,7 @@ fn void load_gl_GL_VERSION_3_0(GLLoadFn load) {
 	isVertexArray = load("glIsVertexArray");
 }
 
-fn void load_gl_GL_VERSION_3_1(GLLoadFn load) {
+fn void load_GL_VERSION_3_1(GLLoadFn load) {
 	drawArraysInstanced = load("glDrawArraysInstanced");
 	drawElementsInstanced = load("glDrawElementsInstanced");
 	texBuffer = load("glTexBuffer");
@@ -13265,7 +13265,7 @@ fn void load_gl_GL_VERSION_3_1(GLLoadFn load) {
 	getIntegeri_v = load("glGetIntegeri_v");
 }
 
-fn void load_gl_GL_VERSION_3_2(GLLoadFn load) {
+fn void load_GL_VERSION_3_2(GLLoadFn load) {
 	drawElementsBaseVertex = load("glDrawElementsBaseVertex");
 	drawRangeElementsBaseVertex = load("glDrawRangeElementsBaseVertex");
 	drawElementsInstancedBaseVertex = load("glDrawElementsInstancedBaseVertex");
@@ -13287,7 +13287,7 @@ fn void load_gl_GL_VERSION_3_2(GLLoadFn load) {
 	sampleMaski = load("glSampleMaski");
 }
 
-fn void load_gl_GL_VERSION_3_3(GLLoadFn load) {
+fn void load_GL_VERSION_3_3(GLLoadFn load) {
 	bindFragDataLocationIndexed = load("glBindFragDataLocationIndexed");
 	getFragDataIndex = load("glGetFragDataIndex");
 	genSamplers = load("glGenSamplers");
@@ -13348,7 +13348,7 @@ fn void load_gl_GL_VERSION_3_3(GLLoadFn load) {
 	secondaryColorP3uiv = load("glSecondaryColorP3uiv");
 }
 
-fn void load_gl_GL_VERSION_4_0(GLLoadFn load) {
+fn void load_GL_VERSION_4_0(GLLoadFn load) {
 	minSampleShading = load("glMinSampleShading");
 	blendEquationi = load("glBlendEquationi");
 	blendEquationSeparatei = load("glBlendEquationSeparatei");
@@ -13397,7 +13397,7 @@ fn void load_gl_GL_VERSION_4_0(GLLoadFn load) {
 	getQueryIndexediv = load("glGetQueryIndexediv");
 }
 
-fn void load_gl_GL_VERSION_4_1(GLLoadFn load) {
+fn void load_GL_VERSION_4_1(GLLoadFn load) {
 	releaseShaderCompiler = load("glReleaseShaderCompiler");
 	shaderBinary = load("glShaderBinary");
 	getShaderPrecisionFormat = load("glGetShaderPrecisionFormat");
@@ -13489,7 +13489,7 @@ fn void load_gl_GL_VERSION_4_1(GLLoadFn load) {
 	getDoublei_v = load("glGetDoublei_v");
 }
 
-fn void load_gl_GL_VERSION_4_2(GLLoadFn load) {
+fn void load_GL_VERSION_4_2(GLLoadFn load) {
 	drawArraysInstancedBaseInstance = load("glDrawArraysInstancedBaseInstance");
 	drawElementsInstancedBaseInstance = load("glDrawElementsInstancedBaseInstance");
 	drawElementsInstancedBaseVertexBaseInstance = load("glDrawElementsInstancedBaseVertexBaseInstance");
@@ -13504,7 +13504,7 @@ fn void load_gl_GL_VERSION_4_2(GLLoadFn load) {
 	drawTransformFeedbackStreamInstanced = load("glDrawTransformFeedbackStreamInstanced");
 }
 
-fn void load_gl_GL_VERSION_4_3(GLLoadFn load) {
+fn void load_GL_VERSION_4_3(GLLoadFn load) {
 	clearBufferData = load("glClearBufferData");
 	clearBufferSubData = load("glClearBufferSubData");
 	dispatchCompute = load("glDispatchCompute");
@@ -13551,7 +13551,7 @@ fn void load_gl_GL_VERSION_4_3(GLLoadFn load) {
 	getPointerv = load("glGetPointerv");
 }
 
-fn void load_gl_GL_VERSION_4_4(GLLoadFn load) {
+fn void load_GL_VERSION_4_4(GLLoadFn load) {
 	bufferStorage = load("glBufferStorage");
 	clearTexImage = load("glClearTexImage");
 	clearTexSubImage = load("glClearTexSubImage");
@@ -13563,7 +13563,7 @@ fn void load_gl_GL_VERSION_4_4(GLLoadFn load) {
 	bindVertexBuffers = load("glBindVertexBuffers");
 }
 
-fn void load_gl_GL_VERSION_4_5(GLLoadFn load) {
+fn void load_GL_VERSION_4_5(GLLoadFn load) {
 	clipControl = load("glClipControl");
 	createTransformFeedbacks = load("glCreateTransformFeedbacks");
 	transformFeedbackBufferBase = load("glTransformFeedbackBufferBase");
@@ -13688,42 +13688,1160 @@ fn void load_gl_GL_VERSION_4_5(GLLoadFn load) {
 	textureBarrier = load("glTextureBarrier");
 }
 
-fn void load_gl_GL_VERSION_4_6(GLLoadFn load) {
+fn void load_GL_VERSION_4_6(GLLoadFn load) {
 	specializeShader = load("glSpecializeShader");
 	multiDrawArraysIndirectCount = load("glMultiDrawArraysIndirectCount");
 	multiDrawElementsIndirectCount = load("glMultiDrawElementsIndirectCount");
 	polygonOffsetClamp = load("glPolygonOffsetClamp");
 }
 
+fn bool has_GL_VERSION_1_0() =>
+	accum != null
+	&& alphaFunc != null
+	&& begin != null
+	&& bitmap != null
+	&& blendFunc != null
+	&& callList != null
+	&& callLists != null
+	&& clear != null
+	&& clearAccum != null
+	&& clearColor != null
+	&& clearDepth != null
+	&& clearIndex != null
+	&& clearStencil != null
+	&& clipPlane != null
+	&& color3b != null
+	&& color3bv != null
+	&& color3d != null
+	&& color3dv != null
+	&& color3f != null
+	&& color3fv != null
+	&& color3i != null
+	&& color3iv != null
+	&& color3s != null
+	&& color3sv != null
+	&& color3ub != null
+	&& color3ubv != null
+	&& color3ui != null
+	&& color3uiv != null
+	&& color3us != null
+	&& color3usv != null
+	&& color4b != null
+	&& color4bv != null
+	&& color4d != null
+	&& color4dv != null
+	&& color4f != null
+	&& color4fv != null
+	&& color4i != null
+	&& color4iv != null
+	&& color4s != null
+	&& color4sv != null
+	&& color4ub != null
+	&& color4ubv != null
+	&& color4ui != null
+	&& color4uiv != null
+	&& color4us != null
+	&& color4usv != null
+	&& colorMask != null
+	&& colorMaterial != null
+	&& copyPixels != null
+	&& cullFace != null
+	&& deleteLists != null
+	&& depthFunc != null
+	&& depthMask != null
+	&& depthRange != null
+	&& disable != null
+	&& drawBuffer != null
+	&& drawPixels != null
+	&& edgeFlag != null
+	&& edgeFlagv != null
+	&& enable != null
+	&& end != null
+	&& endList != null
+	&& evalCoord1d != null
+	&& evalCoord1dv != null
+	&& evalCoord1f != null
+	&& evalCoord1fv != null
+	&& evalCoord2d != null
+	&& evalCoord2dv != null
+	&& evalCoord2f != null
+	&& evalCoord2fv != null
+	&& evalMesh1 != null
+	&& evalMesh2 != null
+	&& evalPoint1 != null
+	&& evalPoint2 != null
+	&& feedbackBuffer != null
+	&& finish != null
+	&& flush != null
+	&& fogf != null
+	&& fogfv != null
+	&& fogi != null
+	&& fogiv != null
+	&& frontFace != null
+	&& frustum != null
+	&& genLists != null
+	&& getBooleanv != null
+	&& getClipPlane != null
+	&& getDoublev != null
+	&& getError != null
+	&& getFloatv != null
+	&& getIntegerv != null
+	&& getLightfv != null
+	&& getLightiv != null
+	&& getMapdv != null
+	&& getMapfv != null
+	&& getMapiv != null
+	&& getMaterialfv != null
+	&& getMaterialiv != null
+	&& getPixelMapfv != null
+	&& getPixelMapuiv != null
+	&& getPixelMapusv != null
+	&& getPolygonStipple != null
+	&& getString != null
+	&& getTexEnvfv != null
+	&& getTexEnviv != null
+	&& getTexGendv != null
+	&& getTexGenfv != null
+	&& getTexGeniv != null
+	&& getTexImage != null
+	&& getTexLevelParameterfv != null
+	&& getTexLevelParameteriv != null
+	&& getTexParameterfv != null
+	&& getTexParameteriv != null
+	&& hint != null
+	&& indexd != null
+	&& indexdv != null
+	&& indexf != null
+	&& indexfv != null
+	&& indexi != null
+	&& indexiv != null
+	&& indexMask != null
+	&& indexs != null
+	&& indexsv != null
+	&& initNames != null
+	&& isEnabled != null
+	&& isList != null
+	&& lightf != null
+	&& lightfv != null
+	&& lighti != null
+	&& lightiv != null
+	&& lightModelf != null
+	&& lightModelfv != null
+	&& lightModeli != null
+	&& lightModeliv != null
+	&& lineStipple != null
+	&& lineWidth != null
+	&& listBase != null
+	&& loadIdentity != null
+	&& loadMatrixd != null
+	&& loadMatrixf != null
+	&& loadName != null
+	&& logicOp != null
+	&& map1d != null
+	&& map1f != null
+	&& map2d != null
+	&& map2f != null
+	&& mapGrid1d != null
+	&& mapGrid1f != null
+	&& mapGrid2d != null
+	&& mapGrid2f != null
+	&& materialf != null
+	&& materialfv != null
+	&& materiali != null
+	&& materialiv != null
+	&& matrixMode != null
+	&& multMatrixd != null
+	&& multMatrixf != null
+	&& newList != null
+	&& normal3b != null
+	&& normal3bv != null
+	&& normal3d != null
+	&& normal3dv != null
+	&& normal3f != null
+	&& normal3fv != null
+	&& normal3i != null
+	&& normal3iv != null
+	&& normal3s != null
+	&& normal3sv != null
+	&& ortho != null
+	&& passThrough != null
+	&& pixelMapfv != null
+	&& pixelMapuiv != null
+	&& pixelMapusv != null
+	&& pixelStoref != null
+	&& pixelStorei != null
+	&& pixelTransferf != null
+	&& pixelTransferi != null
+	&& pixelZoom != null
+	&& pointSize != null
+	&& polygonMode != null
+	&& polygonStipple != null
+	&& popAttrib != null
+	&& popMatrix != null
+	&& popName != null
+	&& pushAttrib != null
+	&& pushMatrix != null
+	&& pushName != null
+	&& rasterPos2d != null
+	&& rasterPos2dv != null
+	&& rasterPos2f != null
+	&& rasterPos2fv != null
+	&& rasterPos2i != null
+	&& rasterPos2iv != null
+	&& rasterPos2s != null
+	&& rasterPos2sv != null
+	&& rasterPos3d != null
+	&& rasterPos3dv != null
+	&& rasterPos3f != null
+	&& rasterPos3fv != null
+	&& rasterPos3i != null
+	&& rasterPos3iv != null
+	&& rasterPos3s != null
+	&& rasterPos3sv != null
+	&& rasterPos4d != null
+	&& rasterPos4dv != null
+	&& rasterPos4f != null
+	&& rasterPos4fv != null
+	&& rasterPos4i != null
+	&& rasterPos4iv != null
+	&& rasterPos4s != null
+	&& rasterPos4sv != null
+	&& readBuffer != null
+	&& readPixels != null
+	&& rectd != null
+	&& rectdv != null
+	&& rectf != null
+	&& rectfv != null
+	&& recti != null
+	&& rectiv != null
+	&& rects != null
+	&& rectsv != null
+	&& renderMode != null
+	&& rotated != null
+	&& rotatef != null
+	&& scaled != null
+	&& scalef != null
+	&& scissor != null
+	&& selectBuffer != null
+	&& shadeModel != null
+	&& stencilFunc != null
+	&& stencilMask != null
+	&& stencilOp != null
+	&& texCoord1d != null
+	&& texCoord1dv != null
+	&& texCoord1f != null
+	&& texCoord1fv != null
+	&& texCoord1i != null
+	&& texCoord1iv != null
+	&& texCoord1s != null
+	&& texCoord1sv != null
+	&& texCoord2d != null
+	&& texCoord2dv != null
+	&& texCoord2f != null
+	&& texCoord2fv != null
+	&& texCoord2i != null
+	&& texCoord2iv != null
+	&& texCoord2s != null
+	&& texCoord2sv != null
+	&& texCoord3d != null
+	&& texCoord3dv != null
+	&& texCoord3f != null
+	&& texCoord3fv != null
+	&& texCoord3i != null
+	&& texCoord3iv != null
+	&& texCoord3s != null
+	&& texCoord3sv != null
+	&& texCoord4d != null
+	&& texCoord4dv != null
+	&& texCoord4f != null
+	&& texCoord4fv != null
+	&& texCoord4i != null
+	&& texCoord4iv != null
+	&& texCoord4s != null
+	&& texCoord4sv != null
+	&& texEnvf != null
+	&& texEnvfv != null
+	&& texEnvi != null
+	&& texEnviv != null
+	&& texGend != null
+	&& texGendv != null
+	&& texGenf != null
+	&& texGenfv != null
+	&& texGeni != null
+	&& texGeniv != null
+	&& texImage1D != null
+	&& texImage2D != null
+	&& texParameterf != null
+	&& texParameterfv != null
+	&& texParameteri != null
+	&& texParameteriv != null
+	&& translated != null
+	&& translatef != null
+	&& vertex2d != null
+	&& vertex2dv != null
+	&& vertex2f != null
+	&& vertex2fv != null
+	&& vertex2i != null
+	&& vertex2iv != null
+	&& vertex2s != null
+	&& vertex2sv != null
+	&& vertex3d != null
+	&& vertex3dv != null
+	&& vertex3f != null
+	&& vertex3fv != null
+	&& vertex3i != null
+	&& vertex3iv != null
+	&& vertex3s != null
+	&& vertex3sv != null
+	&& vertex4d != null
+	&& vertex4dv != null
+	&& vertex4f != null
+	&& vertex4fv != null
+	&& vertex4i != null
+	&& vertex4iv != null
+	&& vertex4s != null
+	&& vertex4sv != null
+	&& viewport != null;
+
+fn bool has_GL_VERSION_1_1() =>
+	areTexturesResident != null
+	&& arrayElement != null
+	&& bindTexture != null
+	&& colorPointer != null
+	&& copyTexImage1D != null
+	&& copyTexImage2D != null
+	&& copyTexSubImage1D != null
+	&& copyTexSubImage2D != null
+	&& deleteTextures != null
+	&& disableClientState != null
+	&& drawArrays != null
+	&& drawElements != null
+	&& edgeFlagPointer != null
+	&& enableClientState != null
+	&& genTextures != null
+	&& getPointerv != null
+	&& indexPointer != null
+	&& indexub != null
+	&& indexubv != null
+	&& interleavedArrays != null
+	&& isTexture != null
+	&& normalPointer != null
+	&& polygonOffset != null
+	&& popClientAttrib != null
+	&& prioritizeTextures != null
+	&& pushClientAttrib != null
+	&& texCoordPointer != null
+	&& texSubImage1D != null
+	&& texSubImage2D != null
+	&& vertexPointer != null;
+
+fn bool has_GL_VERSION_1_2() =>
+	copyTexSubImage3D != null
+	&& drawRangeElements != null
+	&& texImage3D != null
+	&& texSubImage3D != null;
+
+fn bool has_GL_VERSION_1_3() =>
+	activeTexture != null
+	&& clientActiveTexture != null
+	&& compressedTexImage1D != null
+	&& compressedTexImage2D != null
+	&& compressedTexImage3D != null
+	&& compressedTexSubImage1D != null
+	&& compressedTexSubImage2D != null
+	&& compressedTexSubImage3D != null
+	&& getCompressedTexImage != null
+	&& loadTransposeMatrixd != null
+	&& loadTransposeMatrixf != null
+	&& multiTexCoord1d != null
+	&& multiTexCoord1dv != null
+	&& multiTexCoord1f != null
+	&& multiTexCoord1fv != null
+	&& multiTexCoord1i != null
+	&& multiTexCoord1iv != null
+	&& multiTexCoord1s != null
+	&& multiTexCoord1sv != null
+	&& multiTexCoord2d != null
+	&& multiTexCoord2dv != null
+	&& multiTexCoord2f != null
+	&& multiTexCoord2fv != null
+	&& multiTexCoord2i != null
+	&& multiTexCoord2iv != null
+	&& multiTexCoord2s != null
+	&& multiTexCoord2sv != null
+	&& multiTexCoord3d != null
+	&& multiTexCoord3dv != null
+	&& multiTexCoord3f != null
+	&& multiTexCoord3fv != null
+	&& multiTexCoord3i != null
+	&& multiTexCoord3iv != null
+	&& multiTexCoord3s != null
+	&& multiTexCoord3sv != null
+	&& multiTexCoord4d != null
+	&& multiTexCoord4dv != null
+	&& multiTexCoord4f != null
+	&& multiTexCoord4fv != null
+	&& multiTexCoord4i != null
+	&& multiTexCoord4iv != null
+	&& multiTexCoord4s != null
+	&& multiTexCoord4sv != null
+	&& multTransposeMatrixd != null
+	&& multTransposeMatrixf != null
+	&& sampleCoverage != null;
+
+fn bool has_GL_VERSION_1_4() =>
+	blendColor != null
+	&& blendEquation != null
+	&& blendFuncSeparate != null
+	&& fogCoordd != null
+	&& fogCoorddv != null
+	&& fogCoordf != null
+	&& fogCoordfv != null
+	&& fogCoordPointer != null
+	&& multiDrawArrays != null
+	&& multiDrawElements != null
+	&& pointParameterf != null
+	&& pointParameterfv != null
+	&& pointParameteri != null
+	&& pointParameteriv != null
+	&& secondaryColor3b != null
+	&& secondaryColor3bv != null
+	&& secondaryColor3d != null
+	&& secondaryColor3dv != null
+	&& secondaryColor3f != null
+	&& secondaryColor3fv != null
+	&& secondaryColor3i != null
+	&& secondaryColor3iv != null
+	&& secondaryColor3s != null
+	&& secondaryColor3sv != null
+	&& secondaryColor3ub != null
+	&& secondaryColor3ubv != null
+	&& secondaryColor3ui != null
+	&& secondaryColor3uiv != null
+	&& secondaryColor3us != null
+	&& secondaryColor3usv != null
+	&& secondaryColorPointer != null
+	&& windowPos2d != null
+	&& windowPos2dv != null
+	&& windowPos2f != null
+	&& windowPos2fv != null
+	&& windowPos2i != null
+	&& windowPos2iv != null
+	&& windowPos2s != null
+	&& windowPos2sv != null
+	&& windowPos3d != null
+	&& windowPos3dv != null
+	&& windowPos3f != null
+	&& windowPos3fv != null
+	&& windowPos3i != null
+	&& windowPos3iv != null
+	&& windowPos3s != null
+	&& windowPos3sv != null;
+
+fn bool has_GL_VERSION_1_5() =>
+	beginQuery != null
+	&& bindBuffer != null
+	&& bufferData != null
+	&& bufferSubData != null
+	&& deleteBuffers != null
+	&& deleteQueries != null
+	&& endQuery != null
+	&& genBuffers != null
+	&& genQueries != null
+	&& getBufferParameteriv != null
+	&& getBufferPointerv != null
+	&& getBufferSubData != null
+	&& getQueryiv != null
+	&& getQueryObjectiv != null
+	&& getQueryObjectuiv != null
+	&& isBuffer != null
+	&& isQuery != null
+	&& mapBuffer != null
+	&& unmapBuffer != null;
+
+fn bool has_GL_VERSION_2_0() =>
+	attachShader != null
+	&& bindAttribLocation != null
+	&& blendEquationSeparate != null
+	&& compileShader != null
+	&& createProgram != null
+	&& createShader != null
+	&& deleteProgram != null
+	&& deleteShader != null
+	&& detachShader != null
+	&& disableVertexAttribArray != null
+	&& drawBuffers != null
+	&& enableVertexAttribArray != null
+	&& getActiveAttrib != null
+	&& getActiveUniform != null
+	&& getAttachedShaders != null
+	&& getAttribLocation != null
+	&& getProgramInfoLog != null
+	&& getProgramiv != null
+	&& getShaderInfoLog != null
+	&& getShaderiv != null
+	&& getShaderSource != null
+	&& getUniformfv != null
+	&& getUniformiv != null
+	&& getUniformLocation != null
+	&& getVertexAttribdv != null
+	&& getVertexAttribfv != null
+	&& getVertexAttribiv != null
+	&& getVertexAttribPointerv != null
+	&& isProgram != null
+	&& isShader != null
+	&& linkProgram != null
+	&& shaderSource != null
+	&& stencilFuncSeparate != null
+	&& stencilMaskSeparate != null
+	&& stencilOpSeparate != null
+	&& uniform1f != null
+	&& uniform1fv != null
+	&& uniform1i != null
+	&& uniform1iv != null
+	&& uniform2f != null
+	&& uniform2fv != null
+	&& uniform2i != null
+	&& uniform2iv != null
+	&& uniform3f != null
+	&& uniform3fv != null
+	&& uniform3i != null
+	&& uniform3iv != null
+	&& uniform4f != null
+	&& uniform4fv != null
+	&& uniform4i != null
+	&& uniform4iv != null
+	&& uniformMatrix2fv != null
+	&& uniformMatrix3fv != null
+	&& uniformMatrix4fv != null
+	&& useProgram != null
+	&& validateProgram != null
+	&& vertexAttrib1d != null
+	&& vertexAttrib1dv != null
+	&& vertexAttrib1f != null
+	&& vertexAttrib1fv != null
+	&& vertexAttrib1s != null
+	&& vertexAttrib1sv != null
+	&& vertexAttrib2d != null
+	&& vertexAttrib2dv != null
+	&& vertexAttrib2f != null
+	&& vertexAttrib2fv != null
+	&& vertexAttrib2s != null
+	&& vertexAttrib2sv != null
+	&& vertexAttrib3d != null
+	&& vertexAttrib3dv != null
+	&& vertexAttrib3f != null
+	&& vertexAttrib3fv != null
+	&& vertexAttrib3s != null
+	&& vertexAttrib3sv != null
+	&& vertexAttrib4bv != null
+	&& vertexAttrib4d != null
+	&& vertexAttrib4dv != null
+	&& vertexAttrib4f != null
+	&& vertexAttrib4fv != null
+	&& vertexAttrib4iv != null
+	&& vertexAttrib4Nbv != null
+	&& vertexAttrib4Niv != null
+	&& vertexAttrib4Nsv != null
+	&& vertexAttrib4Nub != null
+	&& vertexAttrib4Nubv != null
+	&& vertexAttrib4Nuiv != null
+	&& vertexAttrib4Nusv != null
+	&& vertexAttrib4s != null
+	&& vertexAttrib4sv != null
+	&& vertexAttrib4ubv != null
+	&& vertexAttrib4uiv != null
+	&& vertexAttrib4usv != null
+	&& vertexAttribPointer != null;
+
+fn bool has_GL_VERSION_2_1() =>
+	uniformMatrix2x3fv != null
+	&& uniformMatrix2x4fv != null
+	&& uniformMatrix3x2fv != null
+	&& uniformMatrix3x4fv != null
+	&& uniformMatrix4x2fv != null
+	&& uniformMatrix4x3fv != null;
+
+fn bool has_GL_VERSION_3_0() =>
+	beginConditionalRender != null
+	&& beginTransformFeedback != null
+	&& bindBufferBase != null
+	&& bindBufferRange != null
+	&& bindFragDataLocation != null
+	&& bindFramebuffer != null
+	&& bindRenderbuffer != null
+	&& bindVertexArray != null
+	&& blitFramebuffer != null
+	&& checkFramebufferStatus != null
+	&& clampColor != null
+	&& clearBufferfi != null
+	&& clearBufferfv != null
+	&& clearBufferiv != null
+	&& clearBufferuiv != null
+	&& colorMaski != null
+	&& deleteFramebuffers != null
+	&& deleteRenderbuffers != null
+	&& deleteVertexArrays != null
+	&& disablei != null
+	&& enablei != null
+	&& endConditionalRender != null
+	&& endTransformFeedback != null
+	&& flushMappedBufferRange != null
+	&& framebufferRenderbuffer != null
+	&& framebufferTexture1D != null
+	&& framebufferTexture2D != null
+	&& framebufferTexture3D != null
+	&& framebufferTextureLayer != null
+	&& generateMipmap != null
+	&& genFramebuffers != null
+	&& genRenderbuffers != null
+	&& genVertexArrays != null
+	&& getBooleani_v != null
+	&& getFragDataLocation != null
+	&& getFramebufferAttachmentParameteriv != null
+	&& getIntegeri_v != null
+	&& getRenderbufferParameteriv != null
+	&& getStringi != null
+	&& getTexParameterIiv != null
+	&& getTexParameterIuiv != null
+	&& getTransformFeedbackVarying != null
+	&& getUniformuiv != null
+	&& getVertexAttribIiv != null
+	&& getVertexAttribIuiv != null
+	&& isEnabledi != null
+	&& isFramebuffer != null
+	&& isRenderbuffer != null
+	&& isVertexArray != null
+	&& mapBufferRange != null
+	&& renderbufferStorage != null
+	&& renderbufferStorageMultisample != null
+	&& texParameterIiv != null
+	&& texParameterIuiv != null
+	&& transformFeedbackVaryings != null
+	&& uniform1ui != null
+	&& uniform1uiv != null
+	&& uniform2ui != null
+	&& uniform2uiv != null
+	&& uniform3ui != null
+	&& uniform3uiv != null
+	&& uniform4ui != null
+	&& uniform4uiv != null
+	&& vertexAttribI1i != null
+	&& vertexAttribI1iv != null
+	&& vertexAttribI1ui != null
+	&& vertexAttribI1uiv != null
+	&& vertexAttribI2i != null
+	&& vertexAttribI2iv != null
+	&& vertexAttribI2ui != null
+	&& vertexAttribI2uiv != null
+	&& vertexAttribI3i != null
+	&& vertexAttribI3iv != null
+	&& vertexAttribI3ui != null
+	&& vertexAttribI3uiv != null
+	&& vertexAttribI4bv != null
+	&& vertexAttribI4i != null
+	&& vertexAttribI4iv != null
+	&& vertexAttribI4sv != null
+	&& vertexAttribI4ubv != null
+	&& vertexAttribI4ui != null
+	&& vertexAttribI4uiv != null
+	&& vertexAttribI4usv != null
+	&& vertexAttribIPointer != null;
+
+fn bool has_GL_VERSION_3_1() =>
+	bindBufferBase != null
+	&& bindBufferRange != null
+	&& copyBufferSubData != null
+	&& drawArraysInstanced != null
+	&& drawElementsInstanced != null
+	&& getActiveUniformBlockiv != null
+	&& getActiveUniformBlockName != null
+	&& getActiveUniformName != null
+	&& getActiveUniformsiv != null
+	&& getIntegeri_v != null
+	&& getUniformBlockIndex != null
+	&& getUniformIndices != null
+	&& primitiveRestartIndex != null
+	&& texBuffer != null
+	&& uniformBlockBinding != null;
+
+fn bool has_GL_VERSION_3_2() =>
+	clientWaitSync != null
+	&& deleteSync != null
+	&& drawElementsBaseVertex != null
+	&& drawElementsInstancedBaseVertex != null
+	&& drawRangeElementsBaseVertex != null
+	&& fenceSync != null
+	&& framebufferTexture != null
+	&& getBufferParameteri64v != null
+	&& getInteger64i_v != null
+	&& getInteger64v != null
+	&& getMultisamplefv != null
+	&& getSynciv != null
+	&& isSync != null
+	&& multiDrawElementsBaseVertex != null
+	&& provokingVertex != null
+	&& sampleMaski != null
+	&& texImage2DMultisample != null
+	&& texImage3DMultisample != null
+	&& waitSync != null;
+
+fn bool has_GL_VERSION_3_3() =>
+	bindFragDataLocationIndexed != null
+	&& bindSampler != null
+	&& colorP3ui != null
+	&& colorP3uiv != null
+	&& colorP4ui != null
+	&& colorP4uiv != null
+	&& deleteSamplers != null
+	&& genSamplers != null
+	&& getFragDataIndex != null
+	&& getQueryObjecti64v != null
+	&& getQueryObjectui64v != null
+	&& getSamplerParameterfv != null
+	&& getSamplerParameterIiv != null
+	&& getSamplerParameterIuiv != null
+	&& getSamplerParameteriv != null
+	&& isSampler != null
+	&& multiTexCoordP1ui != null
+	&& multiTexCoordP1uiv != null
+	&& multiTexCoordP2ui != null
+	&& multiTexCoordP2uiv != null
+	&& multiTexCoordP3ui != null
+	&& multiTexCoordP3uiv != null
+	&& multiTexCoordP4ui != null
+	&& multiTexCoordP4uiv != null
+	&& normalP3ui != null
+	&& normalP3uiv != null
+	&& queryCounter != null
+	&& samplerParameterf != null
+	&& samplerParameterfv != null
+	&& samplerParameteri != null
+	&& samplerParameterIiv != null
+	&& samplerParameterIuiv != null
+	&& samplerParameteriv != null
+	&& secondaryColorP3ui != null
+	&& secondaryColorP3uiv != null
+	&& texCoordP1ui != null
+	&& texCoordP1uiv != null
+	&& texCoordP2ui != null
+	&& texCoordP2uiv != null
+	&& texCoordP3ui != null
+	&& texCoordP3uiv != null
+	&& texCoordP4ui != null
+	&& texCoordP4uiv != null
+	&& vertexAttribDivisor != null
+	&& vertexAttribP1ui != null
+	&& vertexAttribP1uiv != null
+	&& vertexAttribP2ui != null
+	&& vertexAttribP2uiv != null
+	&& vertexAttribP3ui != null
+	&& vertexAttribP3uiv != null
+	&& vertexAttribP4ui != null
+	&& vertexAttribP4uiv != null
+	&& vertexP2ui != null
+	&& vertexP2uiv != null
+	&& vertexP3ui != null
+	&& vertexP3uiv != null
+	&& vertexP4ui != null
+	&& vertexP4uiv != null;
+
+fn bool has_GL_VERSION_4_0() =>
+	beginQueryIndexed != null
+	&& bindTransformFeedback != null
+	&& blendEquationi != null
+	&& blendEquationSeparatei != null
+	&& blendFunci != null
+	&& blendFuncSeparatei != null
+	&& deleteTransformFeedbacks != null
+	&& drawArraysIndirect != null
+	&& drawElementsIndirect != null
+	&& drawTransformFeedback != null
+	&& drawTransformFeedbackStream != null
+	&& endQueryIndexed != null
+	&& genTransformFeedbacks != null
+	&& getActiveSubroutineName != null
+	&& getActiveSubroutineUniformiv != null
+	&& getActiveSubroutineUniformName != null
+	&& getProgramStageiv != null
+	&& getQueryIndexediv != null
+	&& getSubroutineIndex != null
+	&& getSubroutineUniformLocation != null
+	&& getUniformdv != null
+	&& getUniformSubroutineuiv != null
+	&& isTransformFeedback != null
+	&& minSampleShading != null
+	&& patchParameterfv != null
+	&& patchParameteri != null
+	&& pauseTransformFeedback != null
+	&& resumeTransformFeedback != null
+	&& uniform1d != null
+	&& uniform1dv != null
+	&& uniform2d != null
+	&& uniform2dv != null
+	&& uniform3d != null
+	&& uniform3dv != null
+	&& uniform4d != null
+	&& uniform4dv != null
+	&& uniformMatrix2dv != null
+	&& uniformMatrix2x3dv != null
+	&& uniformMatrix2x4dv != null
+	&& uniformMatrix3dv != null
+	&& uniformMatrix3x2dv != null
+	&& uniformMatrix3x4dv != null
+	&& uniformMatrix4dv != null
+	&& uniformMatrix4x2dv != null
+	&& uniformMatrix4x3dv != null
+	&& uniformSubroutinesuiv != null;
+
+fn bool has_GL_VERSION_4_1() =>
+	activeShaderProgram != null
+	&& bindProgramPipeline != null
+	&& clearDepthf != null
+	&& createShaderProgramv != null
+	&& deleteProgramPipelines != null
+	&& depthRangeArrayv != null
+	&& depthRangef != null
+	&& depthRangeIndexed != null
+	&& genProgramPipelines != null
+	&& getDoublei_v != null
+	&& getFloati_v != null
+	&& getProgramBinary != null
+	&& getProgramPipelineInfoLog != null
+	&& getProgramPipelineiv != null
+	&& getShaderPrecisionFormat != null
+	&& getVertexAttribLdv != null
+	&& isProgramPipeline != null
+	&& programBinary != null
+	&& programParameteri != null
+	&& programUniform1d != null
+	&& programUniform1dv != null
+	&& programUniform1f != null
+	&& programUniform1fv != null
+	&& programUniform1i != null
+	&& programUniform1iv != null
+	&& programUniform1ui != null
+	&& programUniform1uiv != null
+	&& programUniform2d != null
+	&& programUniform2dv != null
+	&& programUniform2f != null
+	&& programUniform2fv != null
+	&& programUniform2i != null
+	&& programUniform2iv != null
+	&& programUniform2ui != null
+	&& programUniform2uiv != null
+	&& programUniform3d != null
+	&& programUniform3dv != null
+	&& programUniform3f != null
+	&& programUniform3fv != null
+	&& programUniform3i != null
+	&& programUniform3iv != null
+	&& programUniform3ui != null
+	&& programUniform3uiv != null
+	&& programUniform4d != null
+	&& programUniform4dv != null
+	&& programUniform4f != null
+	&& programUniform4fv != null
+	&& programUniform4i != null
+	&& programUniform4iv != null
+	&& programUniform4ui != null
+	&& programUniform4uiv != null
+	&& programUniformMatrix2dv != null
+	&& programUniformMatrix2fv != null
+	&& programUniformMatrix2x3dv != null
+	&& programUniformMatrix2x3fv != null
+	&& programUniformMatrix2x4dv != null
+	&& programUniformMatrix2x4fv != null
+	&& programUniformMatrix3dv != null
+	&& programUniformMatrix3fv != null
+	&& programUniformMatrix3x2dv != null
+	&& programUniformMatrix3x2fv != null
+	&& programUniformMatrix3x4dv != null
+	&& programUniformMatrix3x4fv != null
+	&& programUniformMatrix4dv != null
+	&& programUniformMatrix4fv != null
+	&& programUniformMatrix4x2dv != null
+	&& programUniformMatrix4x2fv != null
+	&& programUniformMatrix4x3dv != null
+	&& programUniformMatrix4x3fv != null
+	&& releaseShaderCompiler != null
+	&& scissorArrayv != null
+	&& scissorIndexed != null
+	&& scissorIndexedv != null
+	&& shaderBinary != null
+	&& useProgramStages != null
+	&& validateProgramPipeline != null
+	&& vertexAttribL1d != null
+	&& vertexAttribL1dv != null
+	&& vertexAttribL2d != null
+	&& vertexAttribL2dv != null
+	&& vertexAttribL3d != null
+	&& vertexAttribL3dv != null
+	&& vertexAttribL4d != null
+	&& vertexAttribL4dv != null
+	&& vertexAttribLPointer != null
+	&& viewportArrayv != null
+	&& viewportIndexedf != null
+	&& viewportIndexedfv != null;
+
+fn bool has_GL_VERSION_4_2() =>
+	bindImageTexture != null
+	&& drawArraysInstancedBaseInstance != null
+	&& drawElementsInstancedBaseInstance != null
+	&& drawElementsInstancedBaseVertexBaseInstance != null
+	&& drawTransformFeedbackInstanced != null
+	&& drawTransformFeedbackStreamInstanced != null
+	&& getActiveAtomicCounterBufferiv != null
+	&& getInternalformativ != null
+	&& memoryBarrier != null
+	&& texStorage1D != null
+	&& texStorage2D != null
+	&& texStorage3D != null;
+
+fn bool has_GL_VERSION_4_3() =>
+	bindVertexBuffer != null
+	&& clearBufferData != null
+	&& clearBufferSubData != null
+	&& copyImageSubData != null
+	&& debugMessageCallback != null
+	&& debugMessageControl != null
+	&& debugMessageInsert != null
+	&& dispatchCompute != null
+	&& dispatchComputeIndirect != null
+	&& framebufferParameteri != null
+	&& getDebugMessageLog != null
+	&& getFramebufferParameteriv != null
+	&& getInternalformati64v != null
+	&& getObjectLabel != null
+	&& getObjectPtrLabel != null
+	&& getPointerv != null
+	&& getProgramInterfaceiv != null
+	&& getProgramResourceIndex != null
+	&& getProgramResourceiv != null
+	&& getProgramResourceLocation != null
+	&& getProgramResourceLocationIndex != null
+	&& getProgramResourceName != null
+	&& invalidateBufferData != null
+	&& invalidateBufferSubData != null
+	&& invalidateFramebuffer != null
+	&& invalidateSubFramebuffer != null
+	&& invalidateTexImage != null
+	&& invalidateTexSubImage != null
+	&& multiDrawArraysIndirect != null
+	&& multiDrawElementsIndirect != null
+	&& objectLabel != null
+	&& objectPtrLabel != null
+	&& popDebugGroup != null
+	&& pushDebugGroup != null
+	&& shaderStorageBlockBinding != null
+	&& texBufferRange != null
+	&& texStorage2DMultisample != null
+	&& texStorage3DMultisample != null
+	&& textureView != null
+	&& vertexAttribBinding != null
+	&& vertexAttribFormat != null
+	&& vertexAttribIFormat != null
+	&& vertexAttribLFormat != null
+	&& vertexBindingDivisor != null;
+
+fn bool has_GL_VERSION_4_4() =>
+	bindBuffersBase != null
+	&& bindBuffersRange != null
+	&& bindImageTextures != null
+	&& bindSamplers != null
+	&& bindTextures != null
+	&& bindVertexBuffers != null
+	&& bufferStorage != null
+	&& clearTexImage != null
+	&& clearTexSubImage != null;
+
+fn bool has_GL_VERSION_4_5() =>
+	bindTextureUnit != null
+	&& blitNamedFramebuffer != null
+	&& checkNamedFramebufferStatus != null
+	&& clearNamedBufferData != null
+	&& clearNamedBufferSubData != null
+	&& clearNamedFramebufferfi != null
+	&& clearNamedFramebufferfv != null
+	&& clearNamedFramebufferiv != null
+	&& clearNamedFramebufferuiv != null
+	&& clipControl != null
+	&& compressedTextureSubImage1D != null
+	&& compressedTextureSubImage2D != null
+	&& compressedTextureSubImage3D != null
+	&& copyNamedBufferSubData != null
+	&& copyTextureSubImage1D != null
+	&& copyTextureSubImage2D != null
+	&& copyTextureSubImage3D != null
+	&& createBuffers != null
+	&& createFramebuffers != null
+	&& createProgramPipelines != null
+	&& createQueries != null
+	&& createRenderbuffers != null
+	&& createSamplers != null
+	&& createTextures != null
+	&& createTransformFeedbacks != null
+	&& createVertexArrays != null
+	&& disableVertexArrayAttrib != null
+	&& enableVertexArrayAttrib != null
+	&& flushMappedNamedBufferRange != null
+	&& generateTextureMipmap != null
+	&& getCompressedTextureImage != null
+	&& getCompressedTextureSubImage != null
+	&& getGraphicsResetStatus != null
+	&& getNamedBufferParameteri64v != null
+	&& getNamedBufferParameteriv != null
+	&& getNamedBufferPointerv != null
+	&& getNamedBufferSubData != null
+	&& getNamedFramebufferAttachmentParameteriv != null
+	&& getNamedFramebufferParameteriv != null
+	&& getNamedRenderbufferParameteriv != null
+	&& getnColorTable != null
+	&& getnCompressedTexImage != null
+	&& getnConvolutionFilter != null
+	&& getnHistogram != null
+	&& getnMapdv != null
+	&& getnMapfv != null
+	&& getnMapiv != null
+	&& getnMinmax != null
+	&& getnPixelMapfv != null
+	&& getnPixelMapuiv != null
+	&& getnPixelMapusv != null
+	&& getnPolygonStipple != null
+	&& getnSeparableFilter != null
+	&& getnTexImage != null
+	&& getnUniformdv != null
+	&& getnUniformfv != null
+	&& getnUniformiv != null
+	&& getnUniformuiv != null
+	&& getQueryBufferObjecti64v != null
+	&& getQueryBufferObjectiv != null
+	&& getQueryBufferObjectui64v != null
+	&& getQueryBufferObjectuiv != null
+	&& getTextureImage != null
+	&& getTextureLevelParameterfv != null
+	&& getTextureLevelParameteriv != null
+	&& getTextureParameterfv != null
+	&& getTextureParameterIiv != null
+	&& getTextureParameterIuiv != null
+	&& getTextureParameteriv != null
+	&& getTextureSubImage != null
+	&& getTransformFeedbacki_v != null
+	&& getTransformFeedbacki64_v != null
+	&& getTransformFeedbackiv != null
+	&& getVertexArrayIndexed64iv != null
+	&& getVertexArrayIndexediv != null
+	&& getVertexArrayiv != null
+	&& invalidateNamedFramebufferData != null
+	&& invalidateNamedFramebufferSubData != null
+	&& mapNamedBuffer != null
+	&& mapNamedBufferRange != null
+	&& memoryBarrierByRegion != null
+	&& namedBufferData != null
+	&& namedBufferStorage != null
+	&& namedBufferSubData != null
+	&& namedFramebufferDrawBuffer != null
+	&& namedFramebufferDrawBuffers != null
+	&& namedFramebufferParameteri != null
+	&& namedFramebufferReadBuffer != null
+	&& namedFramebufferRenderbuffer != null
+	&& namedFramebufferTexture != null
+	&& namedFramebufferTextureLayer != null
+	&& namedRenderbufferStorage != null
+	&& namedRenderbufferStorageMultisample != null
+	&& readnPixels != null
+	&& textureBarrier != null
+	&& textureBuffer != null
+	&& textureBufferRange != null
+	&& textureParameterf != null
+	&& textureParameterfv != null
+	&& textureParameteri != null
+	&& textureParameterIiv != null
+	&& textureParameterIuiv != null
+	&& textureParameteriv != null
+	&& textureStorage1D != null
+	&& textureStorage2D != null
+	&& textureStorage2DMultisample != null
+	&& textureStorage3D != null
+	&& textureStorage3DMultisample != null
+	&& textureSubImage1D != null
+	&& textureSubImage2D != null
+	&& textureSubImage3D != null
+	&& transformFeedbackBufferBase != null
+	&& transformFeedbackBufferRange != null
+	&& unmapNamedBuffer != null
+	&& vertexArrayAttribBinding != null
+	&& vertexArrayAttribFormat != null
+	&& vertexArrayAttribIFormat != null
+	&& vertexArrayAttribLFormat != null
+	&& vertexArrayBindingDivisor != null
+	&& vertexArrayElementBuffer != null
+	&& vertexArrayVertexBuffer != null
+	&& vertexArrayVertexBuffers != null;
+
+fn bool has_GL_VERSION_4_6() =>
+	multiDrawArraysIndirectCount != null
+	&& multiDrawElementsIndirectCount != null
+	&& polygonOffsetClamp != null
+	&& specializeShader != null;
+
+fn bool validate_loaded_gl(int version) {
+	if (version >= 10 && !has_GL_VERSION_1_0()) return false;
+	if (version >= 11 && !has_GL_VERSION_1_1()) return false;
+	if (version >= 12 && !has_GL_VERSION_1_2()) return false;
+	if (version >= 13 && !has_GL_VERSION_1_3()) return false;
+	if (version >= 14 && !has_GL_VERSION_1_4()) return false;
+	if (version >= 15 && !has_GL_VERSION_1_5()) return false;
+	if (version >= 20 && !has_GL_VERSION_2_0()) return false;
+	if (version >= 21 && !has_GL_VERSION_2_1()) return false;
+	if (version >= 30 && !has_GL_VERSION_3_0()) return false;
+	if (version >= 31 && !has_GL_VERSION_3_1()) return false;
+	if (version >= 32 && !has_GL_VERSION_3_2()) return false;
+	if (version >= 33 && !has_GL_VERSION_3_3()) return false;
+	if (version >= 40 && !has_GL_VERSION_4_0()) return false;
+	if (version >= 41 && !has_GL_VERSION_4_1()) return false;
+	if (version >= 42 && !has_GL_VERSION_4_2()) return false;
+	if (version >= 43 && !has_GL_VERSION_4_3()) return false;
+	if (version >= 44 && !has_GL_VERSION_4_4()) return false;
+	if (version >= 45 && !has_GL_VERSION_4_5()) return false;
+	if (version >= 46 && !has_GL_VERSION_4_6()) return false;
+	return true;
+}
+
 fn void load_all_gl(GLLoadFn load, int version) {
-	if (version >= 10) load_gl_GL_VERSION_1_0(load);
-	if (version >= 11) load_gl_GL_VERSION_1_1(load);
-	if (version >= 12) load_gl_GL_VERSION_1_2(load);
-	if (version >= 13) load_gl_GL_VERSION_1_3(load);
-	if (version >= 14) load_gl_GL_VERSION_1_4(load);
-	if (version >= 15) load_gl_GL_VERSION_1_5(load);
-	if (version >= 20) load_gl_GL_VERSION_2_0(load);
-	if (version >= 21) load_gl_GL_VERSION_2_1(load);
-	if (version >= 30) load_gl_GL_VERSION_3_0(load);
-	if (version >= 31) load_gl_GL_VERSION_3_1(load);
-	if (version >= 32) load_gl_GL_VERSION_3_2(load);
-	if (version >= 33) load_gl_GL_VERSION_3_3(load);
-	if (version >= 40) load_gl_GL_VERSION_4_0(load);
-	if (version >= 41) load_gl_GL_VERSION_4_1(load);
-	if (version >= 42) load_gl_GL_VERSION_4_2(load);
-	if (version >= 43) load_gl_GL_VERSION_4_3(load);
-	if (version >= 44) load_gl_GL_VERSION_4_4(load);
-	if (version >= 45) load_gl_GL_VERSION_4_5(load);
-	if (version >= 46) load_gl_GL_VERSION_4_6(load);
+	if (version >= 10) load_GL_VERSION_1_0(load);
+	if (version >= 11) load_GL_VERSION_1_1(load);
+	if (version >= 12) load_GL_VERSION_1_2(load);
+	if (version >= 13) load_GL_VERSION_1_3(load);
+	if (version >= 14) load_GL_VERSION_1_4(load);
+	if (version >= 15) load_GL_VERSION_1_5(load);
+	if (version >= 20) load_GL_VERSION_2_0(load);
+	if (version >= 21) load_GL_VERSION_2_1(load);
+	if (version >= 30) load_GL_VERSION_3_0(load);
+	if (version >= 31) load_GL_VERSION_3_1(load);
+	if (version >= 32) load_GL_VERSION_3_2(load);
+	if (version >= 33) load_GL_VERSION_3_3(load);
+	if (version >= 40) load_GL_VERSION_4_0(load);
+	if (version >= 41) load_GL_VERSION_4_1(load);
+	if (version >= 42) load_GL_VERSION_4_2(load);
+	if (version >= 43) load_GL_VERSION_4_3(load);
+	if (version >= 44) load_GL_VERSION_4_4(load);
+	if (version >= 45) load_GL_VERSION_4_5(load);
+	if (version >= 46) load_GL_VERSION_4_6(load);
 }
 
 fn int load_gl_internal(GLLoadFn load) {
     getIntegerv = load("glGetIntegerv");
     if (getIntegerv == null) return 0;
+    
     int major, minor;
-    getIntegerv((GLenum)GL_MAJOR_VERSION, &major);
-    getIntegerv((GLenum)GL_MINOR_VERSION, &minor);
+    getIntegerv(GL_MAJOR_VERSION, &major);
+    getIntegerv(GL_MINOR_VERSION, &minor);
+    
     int version = (major * 10) + minor;
+    
     load_all_gl(load, version);
+    if (!validate_loaded_gl(version)) return 0;
+    
     return version;
 }
